@@ -36,7 +36,7 @@ Installation of T-DoS
 ----   "pip install python" 
 ----   "pip install git" 
 ----   "pip install scapy" 
-----   "git clone (Provide link)" 
+----   "git clone https://github.com/AEXGroup/TechDos" 
 
 Usage
 ----------------
