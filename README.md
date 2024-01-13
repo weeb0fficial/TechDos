@@ -1,5 +1,5 @@
 Creator: Parzi [Inactive]
-Written code by: Alexander [AlphaX]
+Written code by: Parzi
 Publishers: Pixel Rosee & NightmareAwakes [Pixel- Bravo-0, NightmareAwakes- CPI684]
 
 Users that use it: Bravo-0, CPI684, Skullpredators, ParzivalHack.
