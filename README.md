@@ -1,3 +1,17 @@
+Creator: ParzivalHack (DEADSEC)
+Written code by: Alexander [AlphaX]
+Publishers: Pixel Rosee & NightmareAwakes [Pixel- Bravo-0, NightmareAwakes- CPI684]
+
+Users that use it: Bravo-0, CPI684, Skullpredators, ParzivalHack.
+
+SHARING IS NOT ALLOWED THIS IS AN PRVATE TOOL
+SHARING IS NOT ALLOWED THIS IS AN PRVATE TOOL
+SHARING IS NOT ALLOWED THIS IS AN PRVATE TOOL
+SHARING IS NOT ALLOWED THIS IS AN PRVATE TOOL
+
+
+
+
 # TechDos
 T-DoS Attack Tool
 ------------------
