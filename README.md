@@ -18,22 +18,29 @@ T-DoS is a Multi-Purpose DoS Tool, written in Python 3, right now capable of doi
 
 Installation of T-DoS
 ---------------------------------
-apt update && apt upgrade --
-pip install python --
-pip install git --
-pip install scapy --
-git clone (Provide link) --
+apt update && apt upgrade 
+--
+pip install python 
+--
+pip install git 
+--
+pip install scapy 
+--
+git clone (Provide link) 
+--
 
 Usage
 ----------------
 Disclaimer: Illecit use of this tool could lead to a violation of federal and local laws. Use this tool only on your own network or on networks from which you have obtained permission. The creator of this tool, CANNOT be held liable for any misuse of it.
 
-cd T-DoS --
+cd T-DoS 
+--
 python T-DoS.py
 ---------------------------------
 
 Update
 -------------
-cd T-DoS --
+cd T-DoS 
+--
 bash update.sh
 
