@@ -1,4 +1,4 @@
-Creator: ParzivalHack (DEADSEC)
+Creator: Parzi [Inactive]
 Written code by: Alexander [AlphaX]
 Publishers: Pixel Rosee & NightmareAwakes [Pixel- Bravo-0, NightmareAwakes- CPI684]
 
