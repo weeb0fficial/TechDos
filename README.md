@@ -27,6 +27,7 @@ Installation of T-DoS
 Usage
 ----------------
 Disclaimer: Illecit use of this tool could lead to a violation of federal and local laws. Use this tool only on your own network or on networks from which you have obtained permission. The creator of this tool, CANNOT be held liable for any misuse of it.
+-----------------------------------------------------------------------------------------------------
 ----   "cd T-DoS" 
 ----   "python T-DoS.py"
 ---------------------------------
